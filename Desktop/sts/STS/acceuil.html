@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" type="image/png" href="logo-removebg-preview.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        h1,h2,h3 { font-family: 'Playfair Display', serif; }
+    </style>
+  <title>STS</title>
+</head>
+<body>
+  
+<!-- header -->
+<header class="py-4 bg-white shadow" role="banner">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between">
+      
+      <!-- Logo -->
+      <div class="w-1/4">
+        <h1 class="text-2xl font-bold text-black">
+          <a href="acceuil.html"><img src="logo-removebg-preview.png" class="h-10 w-20" alt=""></a>
+        </h1>
+      </div>
+      <nav class="w-2/4 ">
+        <ul class="flex justify-center space-x-6">
+            <li><a href="acceuil.html" class=" text-[#02a1ac]">Acceuil</a></li>
+
+            <li><a href="a_propos.html" target="_blank" class="text-gray-700 hover:text-[#02a1ac]">A propos</a></li>
+            <div class="flex justify-between space-x-1">
+                <li class="relative group">
+                    <a href="#" class="hover:text-[#02a1ac]">services</a>
+                    <ul class="border-t-2 border-t-[#02a1ac] absolute hidden group-hover:block bg-white text-gray-800 min-w-[180px] shadow-lg z-50 s">
+                        <li><a href="#hotels"  class=" block px-4 py-2 hover:bg-gray-100 hover:text-[#02a1ac]">Hotels</a></li>
+                        <li><a href="#omra"  class=" block px-4 py-2 hover:bg-gray-100 hover:text-[#02a1ac]">Omra</a></li>
+                        <li><a href="#voyages"  class=" block px-4 py-2 hover:bg-gray-100 hover:text-[#02a1ac]">Voyages organisé</a></li>
+                        <li><a href="#circuits"  class=" block px-4 py-2 hover:bg-gray-100 hover:text-[#02a1ac]">Circuits</a></li>
+                        <li><a href="#vols"  class=" block px-4 py-2 hover:bg-gray-100 hover:text-[#02a1ac]">Vols</a></li>
+                    </ul>
+                </li>
+                <img src="ic-flech.svg" alt="" class="h-3 w-3 mt-2 hover:text-[#02a1ac]">
+            </div>
+          <li><a href="agence.html" target="_blank" class="text-gray-700 hover:text-[#02a1ac]">Agences</a></li>
+          <li><a href="contact.html" target="_blank" class="text-gray-700 hover:text-[#02a1ac]">Contact</a></li>
+        </ul>
+      </nav>
+
+<!-- Reseaux -->
+<div class="w-1/4 flex justify-end space-x-6">
+    <!-- facebook -->
+    <a href="https://www.facebook.com/Tunisiebookingcom" target="_blank" 
+       class="relative group text-gray-600 hover:text-blue-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur Facebook">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988H7.898v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
+        </div>
+    </a>
+    
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/tunisiebooking/" target="_blank" 
+       class="relative group text-gray-600 hover:text-pink-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur Instagram">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+
+        </div>
+    </a>
+    
+    <!-- X (Twitter) -->
+    <a href="https://x.com/tunisiebooking1" target="_blank" 
+       class="relative group text-gray-600 hover:text-gray-900 transition-colors duration-300"
+       aria-label="Suivez-nous sur X (Twitter)">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+        </div>
+    </a>
+    
+    <!-- YouTube -->
+    <a href="http://www.youtube.com/@TunisieBookingofficiel" target="_blank" 
+       class="relative group text-gray-600 hover:text-red-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur YouTube">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a2.99 2.99 0 00-2.107-2.117C19.691 3.5 12 3.5 12 3.5s-7.691 0-9.391.569a2.99 2.99 0 00-2.107 2.117C0 7.886 0 12 0 12s0 4.114.502 5.814a2.99 2.99 0 002.107 2.117C4.309 20.5 12 20.5 12 20.5s7.691 0 9.391-.569a2.99 2.99 0 002.107-2.117C24 16.114 24 12 24 12s0-4.114-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
+            </svg>
+        </div>
+    </a>
+</div>
+    </div>
+  </div>
+</header>
+
+<!-- Carousel -->
+<div>
+
+    
+    <!-- Carousel wrapper -->
+    <div id="controls-carousel" class="relative w-full" data-carousel="slide">
+        
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-base md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="sidi.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="absolute inset-0 text-center justify-center z-20 ">
+                    <h2 class="text-5xl md:text-4xl font-bold text-white  px-4 py-2 rounded-lg m-8 p-auto ">Spring Travel Services</h2>
+                    <a href="https://tn.tunisiebooking.com/" class="inline-block p-3 text-white bg-[#02a1ac] hover:bg-transparent border-2 border-[#02a1ac] transition ">Réserver maintenant</a>
+                </div>
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <img src="sahra.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="absolute inset-0 text-center justify-center z-20 ">
+                    <h2 class="text-5xl md:text-4xl font-bold text-white  px-4 py-2 rounded-lg m-8 p-auto ">Spring Travel Services</h2>
+                    <a href="https://tn.tunisiebooking.com/" class="inline-block p-3 text-white bg-[#ffe3ba] hover:bg-transparent border-2 border-[#ffe3ba] transition ">Réserver maintenant</a>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="sodd.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="absolute inset-0 text-center justify-center z-20 ">
+                    <h2 class="text-5xl md:text-4xl font-bold text-white  px-4 py-2 rounded-lg m-8 p-auto ">Spring Travel Services</h2>
+                    <a href="https://tn.tunisiebooking.com/" class="inline-block p-3 text-white bg-[#819f63] hover:bg-transparent border-2 border-[#819f63] transition ">Réserver maintenant</a>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="hadba.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                <div class="absolute inset-0 bg-black/40"></div>
+                <div class="absolute inset-0 text-center justify-center z-20 ">
+                    <h2 class="text-5xl md:text-4xl font-bold text-white  px-4 py-2 rounded-lg m-8 p-auto ">Spring Travel Services</h2>
+                    <a href="https://tn.tunisiebooking.com/" class="inline-block p-3 text-white bg-[#7abbe5] hover:bg-transparent border-2 border-[#7abbe5] transition ">Réserver maintenant</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+</div>
+<!-- services -->
+<div class="h-40">
+    <h1 class="m-8 text-center mt-16 text-4xl font-bold">Découvrez nos services</h1>
+</div>
+
+<div class="bg-gray-100">
+    <!-- Hotels -->
+        <section id="hotels" class="py-16 px-6 max-w-6xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-blue-900 mb-12  ">Hotels</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="golden_yasmine_mehari_tabarka_2.jpg" alt="Hôtel de Luxe" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Golgen Yasmine Mehari Tabarka</h2>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="Hasdrubal_Prestige_Thalassa_et_Spa_9.jpg" alt="Hôtel en Montagne" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Hasdrubal Prestige Thalassa et Spa</h2>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="la_foret_ain_draham_14.jpg" alt="Hôtel en Montagne" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">La foret Ain Drahem</h2>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-5 hover:text-[#02a1ac] hover:underline "><a href="https://tn.tunisiebooking.com/" target="_blank">Découvrez d'avantage d’options et réservez facilement</a></p>
+    </section>
+    <!-- Omra -->
+    <section id="omra" class="py-16 px-6 max-w-6xl mx-auto bg-gray-50">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Offres Omra</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="omra.jpg" alt="Omra Ramadhan" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Omra Ramadhan</h2>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="omra VIP.jpg" alt="Omra Premium" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Omra VIP</h2>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="abraj omra.jpg" alt="Omra Premium" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Abraj Premium Omra</h2>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-5 hover:text-[#02a1ac] hover:underline "><a href="https://tn.tunisiebooking.com/voyage_organise/omra.html" target="_blank">Découvrez d'avantage d’options et réservez facilement</a></p>
+    </section>
+    <!-- voyages Organisé -->
+        <section id="voyages" class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Voyages Organisés</h2>
+        <h3 class="text-center mb-8 text-2xl">Nos déstinations les plus populaires</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="istanbul.jpg" alt="istanbul" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">istanbul</h2>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="maroc.jpg" alt="marrakesh" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">marrakesh</h2>
+                </div>
+            </div>
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="egypte.jpg" alt="egypte" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Egypte</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="rome.jpg" alt="rome" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Rome</h2>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="thailande.jpg" alt="thailande" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Thailande</h2>
+                </div>
+            </div>
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="barcelone.jpg" alt="barcelone" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Barcelone</h2>
+                </div>
+            </div>
+        </div>
+        <p class="text-center mt-5 hover:text-[#02a1ac] hover:underline "><a href="https://tn.tunisiebooking.com/voyage_organise/" target="_blank">Découvrez d'avantage d’options et réservez facilement</a></p>
+    </section>
+    <!-- vols -->
+    <section id="circuits" class="py-16 px-6 max-w-6xl mx-auto bg-gray-50">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Circuits</h2>
+    <div class="flex justify-center space-x-8 flex-wrap">
+            <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105">
+                <img src="ain draham.jpg" alt="cicuit nord" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-center text-gray-700 leading-relaxed">Circuit nord</h2>
+                </div>
+            </div>
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition duration-500 transform hover:scale-105 h-64">
+            <img src="sud.jpg" alt="Circuit Sud" class="w-full h-48 object-cover">
+            <div class="p-6">
+                <h2 class="text-center text-gray-700 leading-relaxed">Circuit Sud</h2>
+            </div>
+        </div>
+    </div>
+        <p class="text-center mt-5 hover:text-[#02a1ac] hover:underline "><a href="https://tn.tunisiebooking.com/voyage_organise/tunisie.html" target="_blank">Pour plus d'informations et résérvation</a></p>
+    </section>
+
+    <section id="vols" class="py-16 px-6 max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Vols</h2>
+        
+        <div class="bg-white rounded-xl shadow-xl overflow-hidden   p-6">
+            <div class="flex justify-between items-center">
+                <p class="text-gray-700 leading-relaxed">
+                    En quelques clics seulement, trouvez le vol idéal selon vos besoins : <br>
+                    vols low cost ou vols directs au départ de la Tunisie. Profitez d’offres exclusives, <br>
+                    de prix imbattables et de conditions claires pour voyager en toute sérénité.
+                </p>
+                <img src="avion.jpg" alt="avion" srcset="" class="h-40 w-80 object-cover rounded-lg">
+            </div>
+                <p class="mt-4 text-center transition duration-300 hover:text-[#02a1ac] hover:underline">
+                    <a href="https://tn.tunisiebooking.com/vol/" target="_blank">Réserver votre Vol</a>
+                </p>
+        </div>
+    </section>
+
+<footer class="site-footer bg-gray-900 text-white py-8 w-full">
+  <div class="w-full mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- À propos -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-3 text-gray-100">À propos de Spring Travel</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Spring Travel Services organise vos voyages au départ de la Tunisie avec une sélection exclusive d'hôtels, vols et séjours aux tarifs les plus compétitifs. Une expérience de réservation simplifiée pour des voyages mémorables.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-3 text-gray-100">Navigation</h3>
+        <div class="grid grid-cols-2 gap-2">
+          <ul class="space-y-2">
+            <li><a href="acceuil.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Accueil</a></li>
+            <li><a href="a_propos.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">À propos</a></li>
+          </ul>
+          <ul class="space-y-2">
+            <li><a href="agence.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Nos agences</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-3 text-gray-100">Suivez-nous</h3>
+        <p class="text-gray-400 text-sm mb-4">Restez connecté pour nos dernières offres</p>
+        <div class="flex items-center space-x-4">
+          <a href="https://www.facebook.com/Tunisiebookingcom" target="_blank" 
+             class="bg-gray-800 hover:bg-blue-600 p-2 rounded-lg transition-colors duration-200" 
+             aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/tunisiebooking/" target="_blank" 
+             class="bg-gray-800 hover:bg-pink-600 p-2 rounded-lg transition-colors duration-200" 
+             aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://x.com/tunisiebooking1" target="_blank" 
+             class="bg-gray-800 hover:bg-gray-700 p-2 rounded-lg transition-colors duration-200" 
+             aria-label="X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="http://www.youtube.com/@TunisieBookingofficiel" target="_blank" 
+             class="bg-gray-800 hover:bg-red-600 p-2 rounded-lg transition-colors duration-200" 
+             aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="pt-6 mt-6 border-t border-gray-800 text-center">
+      <p class="text-gray-500 text-sm">
+        &copy; <span id="currentYear">2026</span> Spring Travel Services. Tous droits réservés.
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

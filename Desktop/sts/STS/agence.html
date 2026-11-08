@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo-removebg-preview.png">
+    <title>Nos agences</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Maps API (remplacez YOUR_API_KEY par votre clé API réelle) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Définition de l'animation */
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Classe qui applique l'animation */
+        #t1 {
+            animation: slideUp 1s ease-out forwards;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        h1,h2,h3 { font-family: 'Playfair Display', serif; }
+        
+        /* Correction pour le footer */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .site-footer {
+            width: 100% !important;
+            left: 0;
+            right: 0;
+        }
+        
+        /* Style personnalisé pour les boutons */
+        .bg-primary {
+            background-color: #02a1ac;
+        }
+        
+        .hover\:bg-secondary:hover {
+            background-color: #029099;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+    <!-- header -->
+    <header class="py-4 bg-white shadow" role="banner">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+      
+            <!-- Logo -->
+                <div class="w-1/4">
+                    <h1 class="text-2xl font-bold text-black">
+                        <a href="acceuil.html"><img src="logo-removebg-preview.png" class="h-10 w-20" alt=""></a>
+                    </h1>
+                </div>
+
+                <nav class="w-2/4">
+                    <ul class="flex justify-center space-x-6">
+                        <li><a href="acceuil.html" class="text-gray-700 hover:text-[#02a1ac]">Acceuil</a></li>
+                        <li><a href="a_propos.html" class="text-gray-700 hover:text-[#02a1ac]">A propos</a></li>
+                        <li><a href="#" class="text-[#02a1ac]">Agences</a></li>
+                        <li><a href="contact.html" target="_blank" class="text-gray-700 hover:text-[#02a1ac]">Contact</a></li>
+                    </ul>
+                </nav>
+        <!-- Reseaux -->
+
+<div class="w-1/4 flex justify-end space-x-6">
+    <!-- facebook -->
+    <a href="https://www.facebook.com/Tunisiebookingcom" target="_blank" 
+       class="relative group text-gray-600 hover:text-blue-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur Facebook">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988H7.898v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
+
+        </div>
+    </a>
+    
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/tunisiebooking/" target="_blank" 
+       class="relative group text-gray-600 hover:text-pink-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur Instagram">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+        </div>
+    </a>
+    
+    <!-- X (Twitter) -->
+    <a href="https://x.com/tunisiebooking1" target="_blank" 
+       class="relative group text-gray-600 hover:text-gray-900 transition-colors duration-300"
+       aria-label="Suivez-nous sur X (Twitter)">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+        </div>
+    </a>
+    
+    <!-- YouTube -->
+    <a href="http://www.youtube.com/@TunisieBookingofficiel" target="_blank" 
+       class="relative group text-gray-600 hover:text-red-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur YouTube">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a2.99 2.99 0 00-2.107-2.117C19.691 3.5 12 3.5 12 3.5s-7.691 0-9.391.569a2.99 2.99 0 00-2.107 2.117C0 7.886 0 12 0 12s0 4.114.502 5.814a2.99 2.99 0 002.107 2.117C4.309 20.5 12 20.5 12 20.5s7.691 0 9.391-.569a2.99 2.99 0 002.107-2.117C24 16.114 24 12 24 12s0-4.114-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
+            </svg>
+        </div>
+    </a>
+</div>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Contenu principal -->
+    <main class="flex-grow">
+        <!-- image -->
+        <div class="relative bg-cover bg-center bg-no-repeat h-[400px] md:h-[500px]" style="background-image: url('Marhaba_Club_2.jpg');">
+            <!-- Overlay facultatif pour lisibilité -->
+            <div class="absolute inset-0 bg-black/40"></div>
+            <!-- Contenu centré -->
+            <div id="t1" class="relative flex flex-col items-center justify-center h-full text-center">
+                <h1 class="text-3xl md:text-5xl font-light text-white mb-4">Nos agences</h1>
+            </div>
+        </div>
+        
+        <div class="h-10"></div>
+        
+        <!-- CONTENT -->
+        <section class="max-w-7xl mx-auto px-6 py-14">
+            <!-- SEARCH -->
+            <div class="mb-10 flex">
+                <input type="text" id="searchInput"
+                    placeholder="Chercher une agence"
+                    class="w-full p-4 rounded-2xl border shadow focus:outline-none focus:ring-2 focus:ring-[#02a1ac]"
+                    onkeyup="searchAgences()">
+            </div>
+
+            <section class="max-w-7xl mx-auto px-6 py-14 flex flex-col md:flex-row gap-10">
+                <!-- MAP À GAUCHE -->
+                <div class="md:w-1/2 w-full rounded-2xl overflow-hidden shadow-xl">
+                    <iframe id="mapFrame" class="w-full h-[600px]"
+                        src="https://www.google.com/maps?q=TunisiaBooking+Tunisie&output=embed"
+                        loading="lazy"></iframe>
+                </div>
+                
+                <!-- liste d'agence -->
+                <div id="agenceList" class="md:w-1/2 w-full space-y-8 overflow-y-auto h-[600px] pr-4">
+                    
+<!-- Tunis Centre Urbain Nord -->
+<div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+                        data-map="https://www.google.com/maps?q=36.848388077591885,10.196246516767518&output=embed">
+                        <div>
+                            <div class="flex items-center space-x-3 mb-3">
+                                <div class=" text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+                                    <img src="localisation.svg" alt="" class="w-6 h-6">
+                                </div>
+                                <h3 class="text-xl font-semibold">Tunis Centre Urbain Nord</h3>
+                            </div>
+                            <p class="text-gray-600">En face du parking Mosquée Sobh. 1003 Centre Urbain Nord</p>
+                            <div class="flex items-center mt-2 space-x-2">
+                                <img src="phone.svg" alt="" class="h-5 w-5">
+                                <p>71 124 101</p>
+                            </div>
+                            <div class="flex items-center mt-2 space-x-2">
+                                <img src="clock.png" alt="" class="h-5 w-5">
+                                <p class="text-sm text-gray-500"> Lun-Ven: 8:30h-18h, Sam: 8:30h-14h</p>
+                            </div>
+                        </div>
+
+                        <button onclick="changeMap(this)"
+                            class="mt-6 bg-[#02a1ac] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#029099] transition shadow-lg">
+                            Voir sur la carte
+                        </button>
+</div>
+
+ <!-- Carrefour Laffayet -->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.8121762241412,10.18088182310641&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class=" text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Carrefour Laffayet</h3>
+        </div>
+        <p class="text-gray-600">Centre commercial Carrefour, 1er etage</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 107</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Sam: 9h-19h, Dim: 10h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+    
+    <!--Central Park -->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.80187775888149,10.183470180009182&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class=" text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Central Park</h3>
+        </div>
+        <p class="text-gray-600">Central Park, 1er étage</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 102</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Samn: 9h-19h, Dim: 9h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Carrefour La Marsa-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.86611044124121,10.297327924193688&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Carrefour La Marsa</h3>
+        </div>
+        <p class="text-gray-600">Centre commercial Carrefour La Marsa 2046</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 111</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Sam: 9h-20h, Dim: 10h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Lac 1-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.83977641499173,10.245186195355947&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Lac 1</h3>
+        </div>
+        <p class="text-gray-600">Rue Lac Victoria (en face de l'UIB) 1053 Tunis</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 106</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--El Manar 3-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.842622378179485,10.163584110700588&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">El Manar 3</h3>
+        </div>
+        <p class="text-gray-600">Rez de jardin, Centre Commercial Manar City 14, avenue du roi Abdelaziz Manar 3 Tunis</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 103</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-20h, Sam: 10h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Manouba-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.8099903600444,10.093392995354153&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Manouba</h3>
+        </div>
+        <p class="text-gray-600">18, av Habib Bourguiba Manouba , Mezzanine bureau M7 au-dessus de la BTE et MAE (en face du Palais Kobbet Ennahas)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>98 150 047</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>  
+    
+    <!--El Manar 2-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.83863457696401,10.161550902222023&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">El Manar 2</h3>
+        </div>
+        <p class="text-gray-600">9, Impasse n°3, Rue Azzouz REBAÏ, 2092, El Manar 2, Tunis</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 884 949</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">9h-18h, Sam: 9h-13h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div> 
+
+    <!--Bardo-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.811757264365696,10.143210451173676&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Bardo</h3>
+        </div>
+        <p class="text-gray-600">Immeuble Tlili, avenue Habib Bourguiba ( en face de banque Zitouna)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 104</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">9h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Megrine-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.769340837010866,10.235879395351695&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Megrine</h3>
+        </div>
+        <p class="text-gray-600">Avenue Habib Bourguiba, Megrine (a cote Attijari Bank)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 124</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Ezzahra-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.73836338769788,10.300187070971402&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Ezzahra</h3>
+        </div>
+        <p class="text-gray-600">sis Angle Avenue Habib Bourguiba et rue Abderrazak Karabaka Ezzahra</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 105</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">9h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Nabeul-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.44856637601446,10.736798537660038&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Nabeul</h3>
+        </div>
+        <p class="text-gray-600">23, Av. Habib Bourguiba - 8000 Nabeul (en face du Gouvernorat de Nabeul et a cote de Gourmandise)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 110</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--El Mourouj 1-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.73381378249586,10.209924101633316&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">El Mourouj 1</h3>
+        </div>
+        <p class="text-gray-600">R14, Centre commercial Lamti, avenue martyrs Ben Arous</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>79 357 606</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-18h, Sam: 9h-13h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Bizerte Centre-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=37.273184348647945,9.869852122365819&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Bizerte Centre</h3>
+        </div>
+        <p class="text-gray-600">Immeuble PF Bloc B 4eme etage, Av. Hassen Nouri Bizerte 7000 (au-dessus de Celio et de LC Waikiki)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 132</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500"></p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Bizerte - Sidi Salem-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=37.28681095257155,lng: 9.8702877358583&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Bizerte - Sidi Salem</h3>
+        </div>
+        <p class="text-gray-600">Sidi Salem Route Ain Mariem (à coté du boulangerie Habbouria), 7000 Bizerte</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>72 427 846</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">8:30h-17:30h, Sam: 8:30h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Mall of Sfax-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=34.84275932953232,10.762148560579714&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class=" text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Mall of Sfax</h3>
+        </div>
+        <p class="text-gray-600">Route de Tunis Km10 Sakiet Ezzit</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>98 132 040</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Sam: 10h-20h, Dimm: 10h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Zaghouane-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.400682724581706,10.144247739509918&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Zaghouane</h3>
+        </div>
+        <p class="text-gray-600">17, Av. 14 janvier Zaghouan (a cote de restaurant Fridays et Attijari Bank)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 121</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Hammamet-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.375748537912564,10.540236610672329&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Hammamet</h3>
+        </div>
+        <p class="text-gray-600">Résidence Corail N°781 Yasmine Hammamet 8050</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 114</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Sam: 9h-18h, Dimm: 10h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Mahdia-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=35.513457833794455,11.048150022259692&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Mahdia</h3>
+        </div>
+        <p class="text-gray-600">Avenue Tahar Sfar Route de la corniche mahdia 5100 (entre hôtel Royal El Mansour et café EL Margoum)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>98 150 042</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8:30h-18h, Sam: 8:30h-13-30h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--El jem-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=35.29304931753929,10.708139713757948&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">El jem</h3>
+        </div>
+        <p class="text-gray-600">1er etage Immeuble les palmiers Place de l independance, El Jem</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>51 155 515</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8:30h-18h, Sam: 8:30h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Mounastir-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=35.77197986530812,10.824711811650293&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Mounastir</h3>
+        </div>
+        <p class="text-gray-600">complexe bureautique Ezzahra , Av. du combattant suprême, Monastir ( en face centre medical Ruspina)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 116</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">8:30h-18h, Sam: 8:30h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Sousse-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=35.84131623128416,10.62741432598473&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Sousse</h3>
+        </div>
+        <p class="text-gray-600"> Centre Commercial Tej Marhaba en face du Movenpick Resort</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>1 124 108</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500"> 9h-16h, Dimm: 10h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Sousse Sahloul-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=35.8377070184735,10.59585411064008&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Sousse Sahloul</h3>
+        </div>
+        <p class="text-gray-600">Immeuble Rouatbi, avenue Yasser Arafaat, Rondpoint mosaïque (a coté Amen banque), Sousse Sahloul</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 109</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8:30h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Beja-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=36.72355564089156,lng: 9.18503339416687&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Beja</h3>
+        </div>
+        <p class="text-gray-600">46 avenue Habib Bourguiba, 2eme etage (au-dessus de la banque Biat et en face de la poste) 9000 Beja</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 133</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Makther-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=35.856731492625414,9.185425979952266&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Makther</h3>
+        </div>
+        <p class="text-gray-600">Immeuble Ammar slama -1ere étage -bureau1- en face du lycée technique Makthar - Avenue Farhat Hachad</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>28 333 911</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8h-17h, Sam: 8h-13h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Sidi Bouzid-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=35.0382045550898,9.488122179904032&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Sidi Bouzid</h3>
+        </div>
+        <p class="text-gray-600">Slim Center, 3ème étage, Bureau 302 - 9100 Sidi-Bouzid</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>31 215 447</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8h-16h, Sam: 8h-13:30h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Mahsouna Sfax-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=34.76306445149534,10.728920537560246&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Mahsouna Sfax</h3>
+        </div>
+        <p class="text-gray-600">Centre Commercial Mahsouna rue lafrane km4 sfax</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 115</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-19h, Sam: 9h-19h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Carrefour Sfax El Jadida-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=34.74194612122156,10.757516398661343&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Carrefour Sfax El Jadida</h3>
+        </div>
+        <p class="text-gray-600">Centre commercial carrefour market Nassria Sfax El Jadida (rez de chausse)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>98 150 026</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-19h, Sam: 9h-19h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Gafsa-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=34.41477049789337,8.793354851031852&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Gafsa</h3>
+        </div>
+        <p class="text-gray-600">(en face du CPG) 2100 Gafsa</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>76 223 228</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8h-19h, Sam: 8h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Touzeur-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=33.91446566236216,8.125896093331065&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Touzeur</h3>
+        </div>
+        <p class="text-gray-600">Residence El Bey, Avenu Chebbi , Tozeur 2200</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>76 471 308</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8:30h-18h, Sam: 8:30h-13h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Douz-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=33.45687860394042,9.024288808649686&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Douz</h3>
+        </div>
+        <p class="text-gray-600">15, avenue Taieb Mhirie Douz (en face STB douz)</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>75 470 308</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8:30h-18:30h, Sam: 8:30h-13h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Carrefour Gabes-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=33.87094848174456,lng: 10.108272408024241&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Carrefour Gabes</h3>
+        </div>
+        <p class="text-gray-600"> Av, Abou EL Kacem Echebbi, Cite El Manara Chentech 6011, Gabes</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 128</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 9h-19h, Sam: 9h-19h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Gabes Bab Bhar-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=33.88688031781907,10.102356088320851&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Gabes Bab Bhar</h3>
+        </div>
+        <p class="text-gray-600">105, Rue Farhat Hached à côte de la banque BIAT en face de la Recette des Finances 9 Avril, Gabes</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>75 266 420</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">8:30h-17:30h, Sam: 8:30h-13h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Djerba-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=33.87737894356945,10.854731542463718&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Djerba</h3>
+        </div>
+        <p class="text-gray-600">Avenue Hassine Anane Houmet Souk 4180 Djerba</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 117</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8:30h-18h, Sam: 8:30h-14h, Dim: 10h-15h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+
+    <!--Kairouane-->
+    <div class="agence group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition p-6 flex flex-col justify-between"
+      data-map="https://www.google.com/maps?q=35.672699112368285,10.10337269343301&output=embed">
+      
+      <div>
+        <div class="flex items-center space-x-3 mb-3">
+          <div class="text-white w-12 h-12 flex items-center justify-center rounded-full shadow-md group-hover:scale-110 transition">
+            <img src="localisation.svg" alt="">
+          </div>
+          <h3 class="text-xl font-semibold">Kairouane</h3>
+        </div>
+        <p class="text-gray-600">Rue Khawarezmi cite sidi saad ( ALhayy Altijari) 3100 Kairouan</p>
+        <div class="flex items-center mt-2 space-x-2">
+          <img src="phone.svg" alt="" class="h-5 w-5">
+          <p>71 124 113</p>
+        </div>
+        <div class="flex items-center mt-2 space-x-2">
+            <img src="clock.png" alt="" class="h-5 w-5">
+            <p class="text-sm text-gray-500">Lun-Ven: 8:30h-18h, Sam: 9h-14h</p>
+        </div>
+      </div>
+
+      <button onclick="changeMap(this)"
+        class="mt-6 bg-primary text-black px-6 py-2 rounded-full font-semibold hover:bg-secondary transition shadow-lg">
+        Voir sur la carte
+      </button>
+    </div>
+                    
+                </div>
+            </section>
+        </section>
+          <script>
+    function searchAgences() {
+  const v = document.getElementById("searchInput").value.toLowerCase();
+  document.querySelectorAll('.agence').forEach(a => {
+    a.style.display = a.innerText.toLowerCase().includes(v) ? "block" : "none";
+  });
+}
+
+function changeMap(btn) {
+  document.getElementById('mapFrame').src =
+    btn.closest('.agence').getAttribute('data-map');
+}
+  </script>
+</section>
+    </main>
+
+    <!-- Footer corrigé -->
+    <footer class="bg-gray-900 text-white py-8 w-full mt-auto">
+        <div class="w-full">
+            <div class="max-w-7xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- À propos -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-3 text-gray-100">À propos de Spring Travel</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Spring Travel Services organise vos voyages au départ de la Tunisie avec une sélection exclusive d'hôtels, vols et séjours aux tarifs les plus compétitifs. Une expérience de réservation simplifiée pour des voyages mémorables.
+                        </p>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-3 text-gray-100">Navigation</h3>
+                        <div class="grid grid-cols-2 gap-2">
+                            <ul class="space-y-2">
+                                <li><a href="acceuil.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Accueil</a></li>
+                                <li><a href="a_propos.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">À propos</a></li>
+                            </ul>
+                            <ul class="space-y-2">
+                                <li><a href="agence.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Nos agences</a></li>
+                                <li><a href="contact.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="mb-6">
+                        <h3 class="text-lg font-semibold mb-3 text-gray-100">Suivez-nous</h3>
+                        <p class="text-gray-400 text-sm mb-4">Restez connecté pour nos dernières offres</p>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://www.facebook.com/Tunisiebookingcom" target="_blank" 
+                                class="bg-gray-800 hover:bg-blue-600 p-2 rounded-lg transition-colors duration-200" 
+                                aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/tunisiebooking/" target="_blank" 
+                                class="bg-gray-800 hover:bg-pink-600 p-2 rounded-lg transition-colors duration-200" 
+                                aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://x.com/tunisiebooking1" target="_blank" 
+                                class="bg-gray-800 hover:bg-gray-700 p-2 rounded-lg transition-colors duration-200" 
+                                aria-label="X (Twitter)">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <a href="http://www.youtube.com/@TunisieBookingofficiel" target="_blank" 
+                                class="bg-gray-800 hover:bg-red-600 p-2 rounded-lg transition-colors duration-200" 
+                                aria-label="YouTube">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="pt-6 mt-6 border-t border-gray-800 text-center">
+                    <p class="text-gray-500 text-sm">
+                        &copy; <span id="currentYear">2026</span> Spring Travel Services. Tous droits réservés.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function searchAgences() {
+            const v = document.getElementById("searchInput").value.toLowerCase();
+            document.querySelectorAll('.agence').forEach(a => {
+                a.style.display = a.innerText.toLowerCase().includes(v) ? "block" : "none";
+            });
+        }
+
+        function changeMap(btn) {
+            document.getElementById('mapFrame').src =
+                btn.closest('.agence').getAttribute('data-map');
+        }
+        
+        // Mise à jour automatique de l'année
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

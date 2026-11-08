@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="logo-removebg-preview.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>A propos</title>
+    <style>
+        /* Définition de l'animation */
+        @keyframes slideUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            }
+
+            /* Classe qui applique l'animation */
+            #t1 {
+            animation: slideUp 1s ease-out forwards;
+            }
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+             #t2{
+                opacity: 0;
+                transform: translateY(30px);
+                animation: fadeUp 0.8s ease-out forwards;
+            }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+        h1,h2,h3 { font-family: 'Playfair Display', serif; }
+
+
+    </style>
+</head>
+<body>
+    <header class="py-4 bg-white shadow" role="banner">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between">
+      
+            <!-- Logo -->
+                <div class="w-1/4">
+                    <h1 class="text-2xl font-bold text-black">
+                        <a href="acceuil.html"><img src="logo-removebg-preview.png" class="h-10 w-20" alt=""></a>
+                    </h1>
+                </div>
+
+            <!-- Navigation toujours visible -->
+                <nav class="w-2/4">
+                    <ul class="flex justify-center space-x-6">
+                        <li><a href="acceuil.html" class="text-gray-700 hover:text-[#02a1ac]">Acceuil</a></li>
+                        <li><a href="#" class="  text-[#02a1ac] ">A propos</a></li>
+
+                        <li><a href="agence.html" class="text-gray-700 hover:text-[#02a1ac]">Agences</a></li>
+                        <li><a href="contact.html" target="_blank" class="text-gray-700 hover:text-[#02a1ac]">Contact</a></li>
+                    </ul>
+                </nav>
+<!-- Reseaux -->
+<div class="w-1/4 flex justify-end space-x-6">
+    <!-- facebook -->
+    <a href="https://www.facebook.com/Tunisiebookingcom" target="_blank" 
+       class="relative group text-gray-600 hover:text-blue-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur Facebook">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.988H7.898v-2.89h2.54V9.797c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562v1.875h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/>
+            </svg>
+
+        </div>
+    </a>
+    
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/tunisiebooking/" target="_blank" 
+       class="relative group text-gray-600 hover:text-pink-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur Instagram">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+
+        </div>
+    </a>
+    
+    <!-- X (Twitter) -->
+    <a href="https://x.com/tunisiebooking1" target="_blank" 
+       class="relative group text-gray-600 hover:text-gray-900 transition-colors duration-300"
+       aria-label="Suivez-nous sur X (Twitter)">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+
+        </div>
+    </a>
+    
+    <!-- YouTube -->
+    <a href="http://www.youtube.com/@TunisieBookingofficiel" target="_blank" 
+       class="relative group text-gray-600 hover:text-red-600 transition-colors duration-300"
+       aria-label="Suivez-nous sur YouTube">
+        <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a2.99 2.99 0 00-2.107-2.117C19.691 3.5 12 3.5 12 3.5s-7.691 0-9.391.569a2.99 2.99 0 00-2.107 2.117C0 7.886 0 12 0 12s0 4.114.502 5.814a2.99 2.99 0 002.107 2.117C4.309 20.5 12 20.5 12 20.5s7.691 0 9.391-.569a2.99 2.99 0 002.107-2.117C24 16.114 24 12 24 12s0-4.114-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z"/>
+            </svg>
+        </div>
+    </a>
+</div>
+            </div>
+        </div>
+    </header>
+    <div class="relative bg-cover bg-center bg-no-repeat h-[400px] md:h-[500px]" style="background-image: url('sahra.jpg');">
+        <!-- Overlay facultatif pour lisibilité -->
+        <div class="absolute inset-0 bg-black/40"></div>
+        <!-- Contenu centré -->
+        <div id="t1" class="relative flex flex-col items-center justify-center h-full text-center">
+            <h1 class="text-3xl md:text-5xl font-light text-white mb-4">A propos</h1>
+
+        </div>
+    </div>
+
+    <div class="py-16" data-aos="fade-up" id="t2">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+            <!-- Image -->
+                <div class="mb-10 md:mb-0"><img src="hotel1.jpg" alt="Image" class="w-full rounded-lg shadow-md"></div>
+        
+            <!-- Text content -->
+            <div class="md:pl-10">
+                <h2 class="text-3xl font-light text-[#02a1ac] mb-6 font-medium">Mention legale</h2>
+                <p class="text-gray-700 mb-6">
+                    Spring Travel Services, agence de voyage de catégorie A (licence n°8517), est à l’origine de la marque TunisieBooking.com. 
+                    Fondée en 2008, elle s’est rapidement imposée comme un acteur majeur du tourisme en Tunisie, spécialisée dans la réservation d’hôtels en ligne. 
+                    Avec des tarifs compétitifs, un service fiable et plus de 250 000 clients, l’entreprise s’est bâtie une solide réputation de leader sur le marché national.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center">
+                        <span class="text-[#02a1ac]">Adresse : </span>Avenue Hassine Anane Houmet Souk 4180 Djerba Tunisie
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-[#02a1ac]" >Tél :</span>  +216 71 124 124
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-[#02a1ac]" >Matricule Fiscal :</span> 0879902LAM000
+                    </li>
+                    <li class="flex items-center">
+                        <span class="text-[#02a1ac]" >Identifiant RNE : </span> 0879902L
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between gap-8 px-6 py-12">
+    
+    <!-- Bloc Notre équipe -->
+    <div class="w-full md:w-1/2 border rounded-lg shadow-md p-6 bg-white">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Notre équipe</h2>
+        <p class="text-gray-700 leading-relaxed">
+        Nous sommes une équipe jeune, dynamique et ambitieuse, composée de plus de 100 professionnels passionnés par l’e-tourisme. 
+        Chacun de nos collaborateurs apporte son expertise, son énergie et sa créativité pour offrir des solutions innovantes et un service de qualité. 
+        Ensemble, nous partageons une vision commune : transformer l’expérience de voyage en Tunisie grâce à des outils modernes, 
+        une approche centrée sur le client et un engagement constant envers l’excellence.
+        </p>
+    </div>
+
+    <!-- Bloc Notre Mission -->
+    <div class="w-full md:w-1/2 border rounded-lg shadow-md p-6 bg-white">
+        <h2 class="text-2xl font-semibold text-gray-900 mb-4">Notre Mission</h2>
+        <p class="text-gray-700 leading-relaxed">
+        Notre mission est d’accompagner les vacanciers comme les voyageurs d’affaires dans la recherche du meilleur hôtel au meilleur prix, 
+        en toute simplicité grâce à une plateforme claire et ergonomique. 
+        Pour garantir une expérience optimale, le service client de TunisieBooking est disponible du lundi au samedi afin d’assister chaque client 
+        et de veiller à ce que leur séjour soit parfaitement réussi.
+        </p>
+    </div>
+    </div>
+
+
+
+<div id="indicators-carousel" class="relative w-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="bg-gray-200">
+        <div class="relative h-56 overflow-hidden  md:h-96">
+            <!-- Item 1 -->
+            <div class="duration-700 ease-in-out" data-carousel-item="active">
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <h2 class="font-semibold text-3xl text-center absolute top-0 left-1/2 transform -translate-x-1/2 z-30">Avantages pour les clients</h2>
+
+                    <div class="h-70  absolute left-30 mt-6 bg-white shadow-sm z-20 p-1 m-5">
+                        <div class="flex space-x-2 mb-2">
+                            <img src="icons8-double-tick-50 (1).png" alt="" class="h-5 w-5">
+                            <h3 class="text-[#02a1ac]">les tarifs les plus bas</h3>
+                        </div>
+                        <p class="text-sm mb-4">
+                            TunisieBooking.com négocie pour vous les meilleurs tarifs avec les hôteliers afin de vous garantir <br>
+                            les prix les plus bas du marché.
+                        </p>
+
+                        <div class="flex space-x-2 mb-2">
+                            <img src="icons8-double-tick-50 (1).png" alt="" class="h-5 w-5">
+                            <h3 class="text-[#02a1ac]">Réservez maintenant et ne payez qu'un acompte</h3>
+                        </div>
+                        <p class="text-sm mb-4">
+                            Le système de réservation de TunisieBooking est simple et original, il vous permet de réserver votre chambre <br>
+                            en payant juste une avance et ce avec le moyen de paiement qui vous convient : carte bancaire, <br>
+                            versement bancaire ou versement postal.
+                        </p>
+                        <div class="flex space-x-2 mb-2">
+                            <img src="icons8-double-tick-50 (1).png" alt="" class="h-5 w-5">
+                            <h3 class="text-[#02a1ac]">Réservation sécurisée</h3>
+                        </div>
+                        <p class="text-sm">
+                            Le système de réservation de TunisieBooking est sécurisé et vos informations personnelles, ainsi que les <br>
+                            coordonnées de votre carte de crédit, sont cryptées.
+                        </p>
+                    </div>
+                    <img src="happy.jpg" alt="" class="h-80 absolute right-10  ">
+                </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div class="absolute inset-0 flex items-center justify-center">
+                    <h2 class="font-semibold text-3xl text-center absolute top-0 left-1/2 transform -translate-x-1/2 z-30">Avantages pour les hôteliers</h2>
+                    <div class="h-40  absolute left-30 mt-6 bg-white shadow-sm  p-1 m-5 z-20">
+                        <p class="m-5 p-5">
+                            Plus de 250000 clients ont réservé leur hôtel via TunisieBooking. <br>
+                            Le modèle économique de Tunisiebooking convient à tous les hôteliers <br>
+                            les clients paieront leurs chambres à l'arrivée à l'hôtel.
+                        </p>
+                    </div>
+                    <img src="royal_azur_thalassa_2.jpg" alt="" class="h-80 absolute right-20 top-10 ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full bg-gray-400" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 19-7-7 7-7"/></svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-5 h-5 text-white rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+<footer class="site-footer bg-gray-900 text-white py-8 w-full">
+  <div class="w-full mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- À propos -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-3 text-gray-100">À propos de Spring Travel</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          Spring Travel Services organise vos voyages au départ de la Tunisie avec une sélection exclusive d'hôtels, vols et séjours aux tarifs les plus compétitifs. Une expérience de réservation simplifiée pour des voyages mémorables.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-3 text-gray-100">Navigation</h3>
+        <div class="grid grid-cols-2 gap-2">
+          <ul class="space-y-2">
+            <li><a href="acceuil.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Accueil</a></li>
+            <li><a href="a_propos.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">À propos</a></li>
+          </ul>
+          <ul class="space-y-2">
+            <li><a href="agence.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Nos agences</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white text-sm transition-colors duration-200">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Réseaux sociaux -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-3 text-gray-100">Suivez-nous</h3>
+        <p class="text-gray-400 text-sm mb-4">Restez connecté pour nos dernières offres</p>
+        <div class="flex items-center space-x-4">
+          <a href="https://www.facebook.com/Tunisiebookingcom" target="_blank" 
+             class="bg-gray-800 hover:bg-blue-600 p-2 rounded-lg transition-colors duration-200" 
+             aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/tunisiebooking/" target="_blank" 
+             class="bg-gray-800 hover:bg-pink-600 p-2 rounded-lg transition-colors duration-200" 
+             aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </a>
+          <a href="https://x.com/tunisiebooking1" target="_blank" 
+             class="bg-gray-800 hover:bg-gray-700 p-2 rounded-lg transition-colors duration-200" 
+             aria-label="X (Twitter)">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+            </svg>
+          </a>
+          <a href="http://www.youtube.com/@TunisieBookingofficiel" target="_blank" 
+             class="bg-gray-800 hover:bg-red-600 p-2 rounded-lg transition-colors duration-200" 
+             aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="pt-6 mt-6 border-t border-gray-800 text-center">
+      <p class="text-gray-500 text-sm">
+        &copy; <span id="currentYear">2026</span> Spring Travel Services. Tous droits réservés.
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
